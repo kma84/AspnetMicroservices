@@ -1,6 +1,12 @@
 var builder = WebApplication.CreateBuilder(args);
 
+string redisConnStr = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("CacheSettings")["ConnectionString"] ?? string.Empty;
+
 // Add services to the container.
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = redisConnStr;
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
