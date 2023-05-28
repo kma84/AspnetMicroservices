@@ -1,0 +1,21 @@
+
+* Run solution docker-compose
+docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
+
+MONGO
+
+docker pull mongo
+
+* run mongo image
+docker run -d -p 27017:27017 --name shopping-mongo mongo
+
+* show log
+docker logs -f shopping-mongo
+
+* mongo interactive
+docker exec -it shopping-mongo /bin/bash
+- If you want to exit the container's interactive shell session, but do not want to interrupt the processes running in it, press Ctrl+P followed by Ctrl+Q. This operation detaches the container and allows you to return to your system's shell.
+
+* mongo cli commands
+	* mongo shell
+	mongosh
