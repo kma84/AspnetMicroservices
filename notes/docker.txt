@@ -23,4 +23,6 @@ docker exec -it shopping-mongo /bin/bash
 	
 REDIS
 
+docker pull redis
+
 https://stackoverflow.com/questions/68021351/net-service-cant-connect-to-redis
