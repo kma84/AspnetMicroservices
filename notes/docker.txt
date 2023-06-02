@@ -31,3 +31,6 @@ https://stackoverflow.com/questions/68021351/net-service-cant-connect-to-redis
 PORTAINER
 
 docker pull portainer/portainer-ce
+
+http://localhost:9000/
+user admin
