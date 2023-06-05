@@ -34,3 +34,11 @@ docker pull portainer/portainer-ce
 
 http://localhost:9000/
 user admin
+
+
+POSTGRE SQL
+
+docker pull postgres
+
+PgAdmin
+docker pull dpage/pgadmin4
