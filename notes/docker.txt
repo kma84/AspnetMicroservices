@@ -42,3 +42,8 @@ docker pull postgres
 
 PgAdmin
 docker pull dpage/pgadmin4
+
+
+gRPC
+
+https://medium.com/aspnetrun/using-grpc-in-microservices-for-building-a-high-performance-interservice-communication-with-net-5-11f3e5fa0e9d
