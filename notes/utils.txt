@@ -1,0 +1,12 @@
+
+
+* CONTROL DE PUERTOS EXCLUIDOS EN WINDOWS
+
+Ver rango de puertos excluidos
+	netsh int ipv4 show excludedportrange protocol=tcp
+
+Para liberar rangos de puertos excluidos
+	net start winnat
+	net stop winnat
+	
+https://github.com/microsoft/WSL/issues/5306
